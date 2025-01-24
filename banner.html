@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	
+	<title>Чехлы</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="fancy/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+
+	<!-- слайдер баннер -->
+	<section class="banner bluebg">	
+		<div class="banner_slider">
+			<div>
+				<div class="banner_slide">
+					<div class="container">
+						<img src="img/main_banner.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="banner_slide">
+					<div class="container">
+						<img src="img/main_banner.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="banner_slide">
+					<div class="container">
+						<img src="img/main_banner.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="banner_slide">
+					<div class="container">
+						<img src="img/main_banner.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="banner_slide">
+					<div class="container">
+						<img src="img/main_banner.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+
+
+
+
+
+	<script  type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script  type="text/javascript" src="js/jquery-migrate-3.0.0.min.js"></script>
+	<script  type="text/javascript" src="slick/slick.min.js"></script>
+	<script  type="text/javascript" src="fancy/jquery.fancybox.js"></script>
+
+	<script>
+		$('.feeds_sliders').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: true,
+  dots: true,
+});
+	</script>
+	
+	<script>
+		$('.banner_slider').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  // arrows: true,
+  dots: true,
+  centerMode: true,
+  centerPadding: '100px',
+  variableWidth: true,
+  adaptiveHeight: true,
+});
+	</script>
+</body>
+</html>

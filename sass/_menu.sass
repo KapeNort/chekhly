@@ -1,0 +1,115 @@
+.pull
+	z-index: 99
+	// position: absolute
+	left: 20px
+	top: 20px
+	span
+		display: block
+		margin: 7px
+		width: 40px
+		height: 2px
+		border: none
+		background-color: #1c7bc5
+
+
+.pull
+	span
+		// background-color: #252525
+
+a.pull 
+	transition: 0.3s ease-out
+	// position: relative
+	display: block
+	left: 0
+
+a.pull.active 
+	padding-bottom: 5px
+	transition: 0.3s ease-out
+	// position: relative
+	// left: 70%
+  
+a.pull.active 
+	span
+		background-color: #1c7bc5
+		&:first-child 
+			transform: rotate(45deg)
+			position: relative
+			top: 13px
+			transition: 0.3s ease-out
+			width: 34px
+  
+a.pull.active 
+	span
+		&:nth-child(2) 
+			transition: 0.3s ease-out
+			background-color: transparent
+  
+a.pull.active 
+	span
+		&:last-child 
+			position: relative
+			transition: 0.3s ease-out
+			width: 34px
+			transform: rotate(-45deg)
+			top: -5px
+		  
+.sender
+	margin: 10px 0
+	width: 100%
+	padding: 10px
+	border: 2px solid #525252
+	background-color: #1c7bc5
+// не понял к чему моб меню
+.bottom_row
+	li 
+		// border-left: 2px solid #cacaca
+		a 
+			// padding: 10px 20px
+			// color: #fff
+		&:last-child
+			// border-right: 2px solid #cacaca
+
+
+@media (min-width:992px) 
+	.bottom_row
+		// display: none
+
+@media (min-width:634px) 
+	a.pull 
+		display: none
+
+@media (max-width:634px) 
+	.bot_header
+		.bottom_row
+			z-index: 2
+			.nav_menu
+				display: none
+				// position: fixed
+				// z-index: 2
+			// ul 
+			// 	width: 100%
+			// 	height: 100vh
+			// 	text-align: center
+			// 	overflow: hidden
+			// 	background-color: rgba(37, 37, 37, 0.7)
+			// 	padding-top: 27%
+			// li 
+			// 	border: 0
+			// 	a 
+			// 		padding: 10px 20px
+			// 		color: #fff!important
+			// 	&:last-child
+			// 		border: 0
+.models
+	color: #252525
+	font-size: 15px
+	padding: 10px 22px
+	display: block
+	background-color: #eee
+
+@media (max-width:375px)
+	.left_menu_ul
+		display: none 
+@media (min-width:375px) 
+	.models
+		display: none
